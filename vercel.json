@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/",
+      "destination": "/public/index.html"
+    },
+    {
       "source": "/api/wish",
       "destination": "/api/wish.ts"
     },
