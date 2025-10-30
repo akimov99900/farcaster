@@ -50,10 +50,11 @@ dw:vote:{date}:{wishIndex}:voters   -> set of FIDs who voted
 
 - Node.js 18+
 - Vercel account with KV configured
-- Environment variables:
+- Environment variables (auto-configured when using Vercel KV):
   - `KV_URL`
   - `KV_REST_API_URL` 
   - `KV_REST_API_TOKEN`
+  - `KV_REST_API_READ_ONLY_TOKEN` (optional)
 
 ### Setup
 
@@ -74,7 +75,24 @@ dw:vote:{date}:{wishIndex}:voters   -> set of FIDs who voted
 
 ### Deployment
 
-Deploy to Vercel with KV integration enabled. The environment variables will be automatically configured.
+1. **Deploy to Vercel:**
+   ```bash
+   vercel
+   ```
+
+2. **Add Vercel KV:**
+   - Go to your Vercel project dashboard
+   - Navigate to Storage → Create Database → KV
+   - Name your database (e.g., "daily-wishes-kv")
+   - Connect it to your project
+   - Environment variables will be automatically configured
+
+3. **Verify Deployment:**
+   - Visit your deployment URL
+   - Test the Frame in Warpcast or a Frame simulator
+   - The initial button should say "Tell me my wish"
+   - After clicking, you should see your personalized wish with Like/Dislike buttons
+   - After voting, you should see "Thank you!" message with live stats
 
 ## How It Works
 
