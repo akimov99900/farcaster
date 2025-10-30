@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Wishes - Personalized Daily Inspiration</title>
+    
+    <!-- Farcaster Frame meta tags -->
+    <meta property="fc:frame" content="vNext" />
+    <meta property="fc:frame:image" content="https://daily-wishes-fixed.vercel.app/api/og" />
+    <meta property="fc:frame:button:1" content="Tell me my wish" />
+    <meta property="fc:frame:button:1:action" content="post" />
+    <meta property="fc:frame:button:1:target" content="https://daily-wishes-fixed.vercel.app/api/wish" />
+    <meta property="fc:frame:post_url" content="https://daily-wishes-fixed.vercel.app/api/wish" />
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Daily Wishes - Personalized Daily Inspiration" />
+    <meta property="og:description" content="Get your personalized daily wish and share what you think!" />
+    <meta property="og:image" content="https://daily-wishes-fixed.vercel.app/api/og" />
+    <meta property="og:type" content="website" />
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        
+        .description {
+            color: #666;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .frame-info {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .frame-info h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        
+        .frame-info p {
+            color: #666;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Daily Wishes</h1>
+        <p class="description">
+            Get your personalized daily wish and share what you think! 
+            Each day brings a unique wish tailored just for you.
+        </p>
+        
+        <div class="frame-info">
+            <h3>📱 Farcaster Frame</h3>
+            <p>This is a Farcaster Frame that serves personalized daily wishes with voting functionality.</p>
+            <p><strong>Features:</strong></p>
+            <ul style="text-align: left; color: #666;">
+                <li>Personalized wishes based on your FID</li>
+                <li>Like/Dislike voting with live statistics</li>
+                <li>One vote per day per user</li>
+                <li>Live vote percentages and counts</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

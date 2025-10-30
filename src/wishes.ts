@@ -1,0 +1,22 @@
+export const wishes = [
+  "May your day be filled with unexpected joy and delightful surprises!",
+  "Wishing you the courage to chase your dreams and the wisdom to enjoy the journey.",
+  "May you find beauty in the ordinary and magic in the mundane today.",
+  "Here's to a day of meaningful connections and heartfelt conversations.",
+  "May you embrace challenges as opportunities and grow stronger with each step.",
+  "Wishing you moments of peace in the chaos and clarity in the confusion.",
+  "May your kindness come back to you multiplied in wonderful ways.",
+  "Here's to discovering new passions and rediscovering old joys today.",
+  "May you laugh often, love deeply, and live fully in this present moment.",
+  "Wishing you the strength to overcome obstacles and the grace to celebrate victories.",
+  "May you find inspiration in unexpected places and motivation within yourself.",
+  "Here's to a day of small victories and big dreams taking flight.",
+  "May you be surrounded by people who lift you up and experiences that fill you up.",
+  "Wishing you the patience to wait for what's worth it and the courage to go after what you want.",
+  "May you find reasons to smile even on difficult days and hope even in dark times.",
+  "Here's to embracing your unique journey and celebrating how far you've come.",
+  "May you make time for what matters most and let go of what weighs you down.",
+  "Wishing you the clarity to see opportunities and the confidence to seize them.",
+  "May you create something beautiful today, whether it's art, connection, or joy.",
+  "Here's to a day of learning, growing, and becoming more yourself than ever before."
+];
