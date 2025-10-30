@@ -1,0 +1,22 @@
+{
+  "name": "daily-wishes-fixed",
+  "version": "1.0.0",
+  "description": "A Farcaster Frame that serves personalized daily wishes with voting",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step needed'",
+    "start": "vercel dev",
+    "test": "npx ts-node __tests__/test-runner.ts"
+  },
+  "dependencies": {
+    "@vercel/kv": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0"
+  }
+}

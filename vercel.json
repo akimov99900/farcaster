@@ -1,0 +1,21 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/wish",
+      "destination": "/api/wish.ts"
+    },
+    {
+      "source": "/api/vote", 
+      "destination": "/api/vote.ts"
+    },
+    {
+      "source": "/api/og",
+      "destination": "/api/og.ts"
+    }
+  ],
+  "functions": {
+    "api/*.ts": {
+      "runtime": "nodejs18.x"
+    }
+  }
+}
