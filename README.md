@@ -74,7 +74,34 @@ dw:vote:{date}:{wishIndex}:voters   -> set of FIDs who voted
 
 ### Deployment
 
-Deploy to Vercel with KV integration enabled. The environment variables will be automatically configured.
+1. Fork or clone this repository to your GitHub account
+2. Go to [Vercel](https://vercel.com) and import the project
+3. During import, enable "KV" storage from the Vercel dashboard
+4. Deploy! The environment variables will be automatically configured by Vercel
+
+**Important:** After deployment, you need to enable Vercel KV:
+- Go to your project in Vercel dashboard
+- Navigate to "Storage" tab
+- Click "Create Database" → "KV"
+- The environment variables (`KV_URL`, `KV_REST_API_URL`, `KV_REST_API_TOKEN`) will be automatically added
+
+### Local Development
+
+For local development with Vercel KV:
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Link your project
+vercel link
+
+# Pull environment variables
+vercel env pull .env.local
+
+# Run locally
+npm run dev
+```
 
 ## How It Works
 
@@ -88,9 +115,39 @@ Deploy to Vercel with KV integration enabled. The environment variables will be 
 
 ## Testing
 
-- Unit tests for hash function and wish selection logic
-- Manual testing via Farcaster Frame simulators (Warpcast devtools, Neynar playground)
-- Test various scenarios: with/without FID, repeat votes, multiple users
+### Unit Tests
+
+Run the test suite to verify hash function and wish selection logic:
+
+```bash
+npm test
+```
+
+### Manual Testing
+
+Test the frame using Farcaster Frame simulators:
+
+1. **Warpcast Frame Validator**
+   - Go to https://warpcast.com/~/developers/frames
+   - Enter your deployed URL
+   - Test the frame interactions
+
+2. **Neynar Frame Playground**
+   - Go to https://dev.neynar.com/
+   - Use the Frame Debugger tool
+   - Enter your deployed URL
+
+3. **Test Scenarios**
+   - Initial load: "Tell me my wish" button should appear
+   - Click button: Should show personalized wish with Like/Dislike buttons
+   - Vote: Should show "Thank you!" message with updated stats
+   - Vote again: Should show "Voted Today" and current stats
+   - Different FIDs: Should get different wishes on the same day
+   - Same FID next day: Should get a different wish
+
+### Testing in Production
+
+Once deployed, share your frame URL in a Farcaster cast to test with real users!
 
 ## License
 

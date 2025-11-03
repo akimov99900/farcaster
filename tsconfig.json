@@ -17,10 +17,10 @@
   },
   "include": [
     "src/**/*",
-    "api/**/*",
-    "__tests__/**/*"
+    "api/**/*"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "__tests__/**/*"
   ]
 }
